@@ -1,57 +1,66 @@
 body {
     margin: 0px;
     background-color: white;
+    font-family: Arial;
 }
 
 p {
-  size: 14px;
-  color: #000;
-  text-align: left; 
+    font-size: 16px;
+    text-align: center;
+}
+
+p.a {
+    font-size: 12px;
+    text-align: center;
+}
+
+p.b {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 12.5%;
 }
 
 h1 {
-  font-size: 32px; /* 200% */
-}
-
-h2 {
-  font-size: 28px; /* 175% */
-  text-align: center;
-}
-
-h3 {
-  font-size: 24px; /* 150% */
-  padding-left: 15px;
-  text-align: left;
-}
-
-h4 {
-  font-size: 20px; /* 125.0% */
-}
-
-h5 {
-  font-size: 18px; /* 112.5% */
-}
-
-h6 {
-  font-size: 16px; /* 100% */
-}
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: left;
+    padding-left: 12.5%;
+  }
+  
+  h3 {
+    color: #ffffff;
+    text-align: center;
+  }
 
 img {
-  max-width: 100%;
-  height: auto;
-}
+    max-width: 100%;
+  }
 
-* {
+.img-loggo {
+    max-height: 150px;
+    height: auto;
+    align-content: center;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .btn {
+    width: 250px;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #aab5af;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  * { /* justerbara boxar för att få sidan responsiv */
     box-sizing: border-box;
-  }
-
-  .menu {
-    width: 25%;
-    float: left;
-  }
-  .main {
-    width: 75%;
-    float: left;
   }
 
   .col-1 {
@@ -64,12 +73,62 @@ img {
 
   .col-3 {
     width: 25%;
+    height: 60vh;
+    padding: 20px;
+    align-content: center;
     text-align: center;
+  }
+
+  .col-3 img {
+    height: 90%;
+  }
+
+  .col-3a {
+    width: 25%;
+    height: 80vh;
+    padding: 0px;
+    align-content: center;
+    text-align: center;
+  }
+
+  .col-3a img {
+    height: 65%;
+  }
+
+  .col-3a img:hover {
+    background-color: #365443;
+    opacity: 70%;
   }
 
   .col-4 {
     width: 33.33%;
-    text-align: center;
+    height: 100vh;
+    text-align: left;
+  }
+
+  .col-4a {
+    width: 33.33%;
+    height: 100vh;
+    background-image: url(images/about/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .col-4b {
+    width: 33.33%;
+    height: 100vh;
+    background-image: url(images/about/3.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .col-4c {
+    width: 33.33%;
+    height: 100vh;
+    background-image: url(images/about/4.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .col-5 {
@@ -78,6 +137,39 @@ img {
 
   .col-6 {
     width: 50%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+  }
+
+  .col-6a {
+    width: 50%;
+    height: 60vh;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+  }
+
+  .col-6a img {
+    height: 90%;
+  }
+
+  .col-16a {
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    background-image: url(images/about/1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .col-16b {
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    background-color: #aab5af;
   }
 
   .col-7 {
@@ -88,7 +180,8 @@ img {
     width: 66.66%;
   }
 
-  .col-9 { width: 75%;
+  .col-9 { 
+    width: 75%;
   }
 
   .col-10 {
@@ -101,20 +194,52 @@ img {
   
   .col-12 {
     width: 100%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
-  .col-12-footer {
+  .col-13 {
     width: 100%;
+    height: 100vh;
+    color: #000;
+    background-color: #aab5af;
     text-align: center;
-    color: #fff;
-    background-color: rgb(200, 200, 200);
+    align-content: center;
+    margin-top: -5px;
+  }
+
+  .col-14 { /* box for footer with different background color */
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: #aab5af;
+    margin-top: -5px;
+  }
+
+  .col-15 { /* box for copyright */
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: #aab5af;
+  }
+
+  .col-17 {
+    width: 100%;
+    height: 20vh;
+    color: #000;
+    background-color: #aab5af;
+    text-align: center;
+    align-content: center;
+    margin-top: -5px;
   }
 
   [class*="col-"] {
     float: left;
-    padding: 15px;
-    border: 0px solid red;
+    padding: 0;
   }
 
   .row::after {
@@ -124,65 +249,102 @@ img {
   }
 
   @media only screen and (max-width: 600px) {
-    body {
-      background-color: #fff;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
     [class*="col-"] {
-      width: 100%;
-    }
+        width: 100%;
+      }
   }
 
-  ul {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  @media only screen and (min-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+      }
   }
 
-  ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  @media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-3a {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-4a {width: 33.33%;}
+  .col-4b {width: 33.33%;}
+  .col-4c {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-6a {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .col-13 {width: 100%;}
+  .col-14 {width: 100%;}
+  .col-15 {width: 100%;}
+  .col-16a {width: 50%;}
+  .col-16b {width: 50%;}
+  .col-17 {width: 100%;}
+  }
+
+/* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+.topnav {
+    width: 100%;
     background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    text-align: left;
+    opacity: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
-  ul.topnav li {
-    float: left;
-  }
-  
-  ul.topnav li a {
-    display: block;
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    display: inline-block;
     color: #000;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px;
     text-decoration: none;
+    font-size: 17px;
   }
   
-  ul.topnav li a:hover:not(.active) {
-    background-color: #ccc;
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #aab5af;
+    color: black;
   }
   
-  ul.topnav li a.active {
-    background-color: #ccc;
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #365443;
+    color: white;
   }
   
-  ul.topnav li.right {
-    float: right;
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
   }
 
-  ul.topnav li.active {
-    background-color: #ccc;
-    float: right;
-  }
+    /* When the screen is less than 1050 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    @media screen and (max-width: 1050px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
   
-  @media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 1050px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
   }
 
- 

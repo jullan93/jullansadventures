@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Foto by Jullan</title>
+<title>Jullans Adventures | Nordic Outdoor Explorer</title>
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script> <!-- extern script för ikoner i footer -->
+<script src="functions.js"></script> 
 </head>
 <body>
 
-    <!-- meny -->
-    <ul class="topnav">
-        <li><a href="index.html">FOTO BY <b>JULLAN</b>
-        </a></li>
-        <li class="active"><a href="contact.html">KONTAKT</a></li>
-        <li class="right"><a href="prices.html">PRISER</a></li>
-        <li class="right"><a href="commercial.html">REKLAM</a></li>
-        <li class="right"><a href="wedding.html">BRÖLLOP</a></li>
-        <li class="right"><a href="portrait.html">PORTRÄTT</a></li>
-    </ul>
-
-<header>
-    <a href="index.html"><img src="gallery/header.jpg"></a>
-</header>
-
-<content>
-
-    <div class="row">
-        <div class="col-3">...</div> <!-- 25% -->
-        <div class="col-3">...</div> <!-- 25% -->
-        <div class="col-3">...</div> <!-- 25% -->
-        <div class="col-3">...</div> <!-- 25% -->
+    <!-- fast meny i överkant -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">HOME</a>
+        <a href="photography.html">PHOTOGRAPHY</a>
+        <a href="videography.html">VIDEOGRAPHY</a>
+        <a href="dronephotography.html">DRONE PHOTOGRAPHY</a>
+        <a href="dronevideography.html">DRONE VIDEOGRAPHY</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html" class="active">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    
-</content>
 
-<div class="row">
-    <div class="col-12-footer">
-        <a href="https://www.instagram.com/fotobyjullan" target="_blank">
-          <i class="fa-brands fa-instagram fa-l" style="color: #ffffff;"></i></a> 
-          <p2>FOTOBYJULLAN</p2>
-          <br>
-          <br>
-          <a href="https://www.facebook.com/profile.php?id=61567155113697" target="_blank">
-          <i class="fa-brands fa-facebook fa-l" style="color: #ffffff;"></i></a>
-          <p2>FOTO BY JULLAN</p2>
-          <br>
-          <br>
-          <i class="fa-solid fa-phone fa-l" style="color: #ffffff;"></i> <p2>+46736 - 81 22 40</p2>
-          <br>
-          <br>
-          <a href="mailto:juliabilling93@gmail.com">
-          <i class="fa-regular fa-envelope fa-l" style="color: #ffffff;"></i></a>
-          <p2>JULIABILLING93@GMAIL.COM</p2>
-    </div>
-</div>
+     <!-- header -->
+     <div class="col-12">
+        <img src="images/main/header.png">
+     </div>
+
+      <!-- Presentation of me -->
+    <div class="col-6"> <!-- 50% -->
+    <h1>Explore the great outdoors -
+        <br/>with your brand front and center!</h1>
+    <p>Are you ready to elevate your brand's presence in the outdoor adventure space?
+        <br/>As an experienced content creator, photographer, and videographer, I specialize in capturing
+        <br/>the essence of nature and adventure to tell compelling stories that resonate with audiences.
+        <br/><br/>
+        With years of hands-on experience in the wilderness, 
+        <br/>I don’t just document outdoor adventures — <b>I live them</b>.
+        <br/><br/>
+        Whether you're an outdoor company, travel agency, or lifestyle brand, I create stunning visuals
+        <br/>and engaging content that aligns with your vision and inspires your audience to embark on 
+        <br/>their next adventures - with your brand as their guide.
+    </p>
+    <h1>Why work with me?</h1>
+    <p><b>* Authenticity:</b> I bring genuine passion for the outdoors to every project, 
+        <br/>ensuring your content connects on a personal level.</p>
+    <p><b>* Quality:</b> From breathtaking photography to dynamic videos, 
+        <br/>I deliver professional, high-impact visuals that reflect your brand's values.</p>
+    <p><b>* Versatility:</b> Whether you need social media campaigns, website content, 
+        <br/>or promotional videos, I craft stories tailored to your unique goals.</p>
+    <p><b>* Collaboration:</b> I work closely with you to understand your vision,
+        <br/>ensuring your message shines through every frame.</p> 
+    <h1>Let's create together!</h1>
+    <p>Partnering with me means more than just photos and videos;
+        <br/>it means building a story your costumers will want to be part of.
+        <br/>Let's create content that inspires action and building lasting connections.
+    </p>
+    <br/>
+    <p><b>📩 Contact me today to discuss how we can bring your vision to life.</b></p>
+    <p>Together, we'll make your brand synonymous with adventure and exploration.</p>
+    <a href="mailto:juliabilling93@gmail.com"><p>juliabilling93@gmail.com</p></a>
+    <p>+46 736 - 81 22 40 (text message)</p>
+    <br/><br/>
+    <center><div class="btn">
+        <a href="mailto:juliabilling93@gmail.com"><h3>LET'S CONNECT!</h3></a>
+        </div></center>
+
+    </div>    
+        <div class="col-6"><!-- 50% -->
+            <img src="images/main/profilepic.JPG" width="50%">
+        </div>
+
+
+
+    <!-- footer -->
+    <div class="col-14">
+        <img src="images/main/logotyp-whole.png" width="40%">
+        <br/>
+        <br/>
+        <a href="https://instagram.com/jullansadventures">
+        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #365443;"></i>
+        </a>
+        <a href="https://www.youtube.com/@JullansAdventures">
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #365443;"></i>
+        </a>
+        <a href="mailto:juliabilling93@gmail.com">
+            <i class="fa-solid fa-square-envelope fa-2xl" style="color: #365443;"></i>
+        </a>
+        
+        <p>OSKARSTRÖM, HALLAND</p>
+        <p>JULIABILLING93@GMAIL.COM</p>
+        <p>+46736 - 81 22 40 (TEXT MESSAGE)</p>
+     </div>
+
+     <div class="col-15">
+        <p class="a">ALL CONTENT COPYRIGHT © 2024 JULLANS ADVENTURES - GODKÄND FÖR F-SKATT</p>
+     </div>
 
 </body>
 </html>

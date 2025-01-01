@@ -1,102 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Foto by Jullan</title>
+<title>Jullans Adventures | Nordic Outdoor Explorer</title>
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script> <!-- extern script för ikoner i footer -->
+<script src="functions.js"></script> 
 </head>
 <body>
 
-    <!-- meny -->
-    <ul class="topnav">
-        <li><a class="active" href="index.html">FOTO BY <b>JULLAN</b>
-        </a></li>
-        <li class="right"><a href="contact.html">KONTAKT</a></li>
-        <li class="right"><a href="prices.html">PRISER</a></li>
-        <li class="right"><a href="commercial.html">REKLAM</a></li>
-        <li class="right"><a href="wedding.html">BRÖLLOP</a></li>
-        <li class="right"><a href="portrait.html">PORTRÄTT</a></li>
-    </ul>
+    <!-- fast meny i överkant -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">HOME</a>
+        <a href="photography.html">PHOTOGRAPHY</a>
+        <a href="videography.html">VIDEOGRAPHY</a>
+        <a href="dronephotography.html">DRONE PHOTOGRAPHY</a>
+        <a href="dronevideography.html">DRONE VIDEOGRAPHY</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+     <!-- header -->
+     <div class="col-12">
+        <img src="images/main/header.png">
+     </div>
+
+     <!-- introduction to me and my pages -->
+     <div class="col-13">
+        <h1>Welcome to Jullan's Adventures, your gateway to the Nordic wilderness</h1> 
+        <p>Join me as I embark on thrilling outdoor escapades across Sweden and beyond, 
+        <br/>capturing nature's raw beauty and the spirit of adventure. 
+        <br/><br/>
+        On this site and my social media, you'll find:
+        <br/>
+        <br/>* <b>Hiking Expeditions:</b> Traverse scenic trails through forests, mountains, and serene coastlines.
+        <br/>* <b>Camping Tips:</b> Learn tricks for setting up the perfect campsite in diverse Nordic landscapes.
+        <br/>* <b>Wildlife Encounters:</b> Discover the unique fauna of the northern wilderness.
+        <br/><br/>
+        <b>Seasonal Adventures:</b> Experience summer's midnight sun, autumn colors, and magical winter treks.
+        <br/><br/>
+        Whether you're an avid adventurer or seeking inspiration, I offer excitement, education, and a deep love for nature.
+        <br/><br/>
+        Subscribe and hit the bell to join the adventure and stay updated on all my explorations.
+        <br/><br/>
+        Let’s explore the Nordic outdoors together!</p>
+        <br/><br/>
+        <img src="images/main/logotyp-black.png">
+     </div>
 
 
-    <header>
-        <a href="index.html"><img src="gallery/header.jpg"></a>
-    </header>
-
-    <div class="row">
-        <div class="col-12">
-            <h2>MINA TJÄNSTER</h2>
-        </div>
+    <!-- Presentation of me -->
+    <div class="col-6"> <!-- 50% -->
+        <h1>WHO AM I?</h1>
+        <p>I’m a woman in my early 30's who has always had a deep connection with nature and the outdoors. 
+        <br/>Some of my earliest and happiest memories are of being outside, 
+        <br/>soaking in the fresh air and freedom that only the natural world can offer. 
+        <br/>While life took me in different directions for a while, the last six years have brought me back to where my heart belongs — 
+        <br/>exploring the outdoors, especially hiking in the mountains and camping under the stars.
+        <br/>
+        <br/>My grandfather has called me “Jullan” for as long as I can remember, 
+        <br/>and that nickname feels perfectly tied to my identity as an adventurer and lover of the outdoors. 
+        <br/>These days, I spend as much time as I can exploring the incredible Nordic landscapes. 
+        <br/>From the rugged mountain trails to the quiet beauty of a forest at dusk, 
+        <br/>there’s nothing that compares to the serenity and inspiration I find in nature.
+        <br/>
+        <br/>Sleeping in the mountains has become one of my greatest joys. 
+        <br/>It’s where I sleep the best, surrounded by the stillness of the wilderness and the comforting sounds of nature. 
+        <br/>Whether it’s a short day hike to a stunning viewpoint or a multi-day exploration deep into remote terrain, 
+        <br/>I thrive on the opportunity to disconnect from the everyday and connect with the beauty of the world around me.
+        <br/>
+        <br/>Let’s explore, learn, and preserve our natural world together!</p>
+        <br/><br/><br/><br/>
+        <center><div class="btn">
+        <a href="about.html"><h3>MORE ABOUT ME</h3></a>
+        </div></center>
     </div>
 
-    <div class="row">
-        <div class="col-4">
-            <a href="portrait.html"><img src="gallery/main/portrait.jpg" width="100%"></a>
-            <h4>PORTRÄTT</h4>
-        </div> <!-- 33% -->
-        <div class="col-4">
-            <a href="wedding.html"><img src="gallery/main/wedding.jpeg" width="100%"></a>
-            <h4>BRÖLLOP</h4>
-        </div> <!-- 33% -->
-        <div class="col-4">
-            <a href="commercial.html"><img src="gallery/main/commercial.jpg" width="100%"></a>
-            <h4>REKLAM & PRODUKT</h4>
-        </div> <!-- 33% -->
+    <div class="col-6"><!-- 50% -->
+        <img src="images/main/profilepic.JPG" width="50%">
     </div>
 
-    <div class="row"></div>
-        <div class="col-4">
-            <img src="gallery/main/profilepic.jpg" width="100%">
-        </div> <!-- 33.33% -->
-        <div class="col-4">
-            <h4>JULIA "JULLAN" BILLING</h4>
-            <p>
-            Möt mig; Jullan, en passionerad 31-årig fotograf som specialiserat mig på porträtt-, bröllop-, kommersiell- och produktfotografering. 
-            Med ett skarpt öga för detaljer och ett engagemang för att fånga autentiska, naturliga känslor, väcker jag ögonblick till liv genom linsen – 
-            oavsett om det är du och dina nära och kära som delar ett hjärtligt leende eller den perfekta belysningen och miljön för att visa upp ditt varumärkes produkter i verkliga miljöer. 
-            <br/>
-            <br/>
-            Från intima bröllopsögonblick till professionella produktvisningar, är jag dedikerade till att leverera bilder som inte bara är visuellt fantastiska utan också djupt meningsfulla. 
-            Varje bild återspeglar deras uppdrag att framhäva skönheten i verkliga kopplingar och presentera produkter i bästa möjliga ljus.
-            </p>
-        </div> <!-- 33.33% -->
-        <div class="col-4">
-            <h4>5 KORTA FAKTA OM MIG</h4>
-            <p>
-            ❥ Född 1993 i Ängelholm
-            <br/>
-            ❥ Bor i en marklägenhet i Oskarström utanför Halmstad.
-            <br/>
-            ❥ Trivs bäst ute i skogen eller på fjället med mitt tält och sporadiska packning för att koppla bort från samhällets stress.
-            <br/>
-            ❥ Höll på med gymnasik i 15 år i min uppväxt och kan fortfarande stå i brygga.
-            <br/>
-            ❥ Om jag bara fått äta ett livsmedel resten av livet hade jag valt potatis.
-            </p>
-        </div> <!-- 33.33% -->
+    <!-- my services -->
+     <div class="col-17">
+        <h1>MY SERVICES</h1>
+     </div>
+
+
+    <div class="col-3a"><!-- 25% -->
+        <a href="photography.html"><img src="images/main/photography.JPG">
+        <p><b>PHOTOGRAPHY</b></p></a>
     </div>
-    
-    <div class="row">
-        <div class="col-12-footer">
-            <a href="https://www.instagram.com/fotobyjullan" target="_blank">
-              <i class="fa-brands fa-instagram fa-l" style="color: #ffffff;"></i></a> 
-              <p2>FOTOBYJULLAN</p2>
-              <br>
-              <br>
-              <a href="https://www.facebook.com/profile.php?id=61567155113697" target="_blank">
-              <i class="fa-brands fa-facebook fa-l" style="color: #ffffff;"></i></a>
-              <p2>FOTO BY JULLAN</p2>
-              <br>
-              <br>
-              <i class="fa-solid fa-phone fa-l" style="color: #ffffff;"></i> <p2>+46736 - 81 22 40</p2>
-              <br>
-              <br>
-              <a href="mailto:juliabilling93@gmail.com">
-              <i class="fa-regular fa-envelope fa-l" style="color: #ffffff;"></i></a>
-              <p2>JULIABILLING93@GMAIL.COM</p2>
-        </div>
+    <div class="col-3a"><!-- 25% -->
+        <a href="videography.html"><img src="images/main/videography.JPG">
+        <p><b>VIDEOGRAPHY</b></p></a>
     </div>
+    <div class="col-3a"><!-- 25% -->
+        <a href="dronephotography.html"><img src="images/main/dronephoto.JPG">
+        <p><b>DRONE PHOTOGRAPHY</b></p></a>
+    </div>
+    <div class="col-3a"><!-- 25% -->
+        <a href="dronevideography.html"><img src="images/main/dronevideo.JPG">
+        <p><b>DRONE VIDEOGRAPHY</b></p></a>
+    </div>
+
+
+    <!-- footer -->
+    <div class="col-14">
+        <img src="images/main/logotyp-whole.png" width="40%">
+        <br/>
+        <br/>
+        <a href="https://instagram.com/jullansadventures">
+        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #365443;"></i>
+        </a>
+        <a href="https://www.youtube.com/@JullansAdventures">
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #365443;"></i>
+        </a>
+        <a href="mailto:juliabilling93@gmail.com">
+            <i class="fa-solid fa-square-envelope fa-2xl" style="color: #365443;"></i>
+        </a>
+        
+        <p>OSKARSTRÖM, HALLAND</p>
+        <p>JULIABILLING93@GMAIL.COM</p>
+        <p>+46736 - 81 22 40 (TEXT MESSAGE)</p>
+     </div>
+
+     <div class="col-15">
+        <p class="a">ALL CONTENT COPYRIGHT © 2024 JULLANS ADVENTURES - GODKÄND FÖR F-SKATT</p>
+     </div>
 
 </body>
 </html>
