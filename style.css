@@ -350,7 +350,7 @@ img {
       top: 0;
     }
     .topnav.responsive a {
-      float: none;
+      float: left;
       display: block;
       text-align: left;
     }
