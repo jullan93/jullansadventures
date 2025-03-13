@@ -2,101 +2,256 @@
 <html>
 <head>
 <title>Jullans Adventures | Nordic Outdoor Explorer</title>
+
+<!-- länk till styling i css -->
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script> <!-- extern script för ikoner i footer -->
+
+<!-- extern script för ikoner på hemsidan -->
+<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script>
+
+<!-- länk till funktioner med Javascript -->
 <script src="functions.js"></script> 
 </head>
 <body>
 
-    <!-- fast meny i överkant -->
-    <div class="topnav" id="myTopnav">
-        <a href="index.html">HOME</a>
-        <a href="photography.html">PHOTOGRAPHY</a>
-        <a href="videography.html">VIDEOGRAPHY</a>
-        <a href="dronephotography.html">DRONE PHOTOGRAPHY</a>
-        <a href="dronevideography.html">DRONE VIDEOGRAPHY</a>
-        <a href="about.html">ABOUT</a>
-        <a href="contact.html" class="active">CONTACT</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+    <!-- menues -->
+     
+     <!-- overlay menu for mobile devices -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html" class="">Home</a>
+            <a href="photography.html" class="">Photography</a>
+            <a href="videography.html" class="">Videography</a>
+            <a href="categories.html" class="">Categories</a>
+            <a href="blog.html" class="">Blog</a>
+            <a href="about.html" class="">About</a>
+            <a href="contact.html" class="">Contact</a>
+            <a href="https://instagram.com/jullansadventures" class=""><i class="fab fa-instagram fa-2xs"></i></a>
+            <a href="https://facebook.com/jullansadventures" class=""><i class="fab fa-facebook-f fa-2xs"></i></a>
+            <a href="https://youtube.com/@jullansadventures" class=""><i class="fab fa-youtube fa-2xs"></i></a>
+        </div>
       </div>
 
-     <!-- header -->
-     <div class="col-12">
-        <img src="images/main/header.jpg">
-     </div>
+        <span class="openbtn" onclick="openNav()"><p class="brand">Jullans Adventures</p> &#9776;</span>
+      <!-- .overlay menu for mobile devices -->
+    
+      <!-- Fixed Menu for larger devices -->
+      <div id="fixedMenu">
+        <div class="col-2">
+        <p class="brand"><a href="index.html">Jullans Adventures</p></a>
+        </div>
+        <div class="col-7">
+            <a href="index.html" class="">Home</a>
+                <a href="photography.html" class="">Photography</a>
+                <a href="videography.html" class="">Videography</a>
+                <a href="categories.html" class="">Categories</a>
+                <a href="blog.html" class="">Blog</a>
+                <a href="about.html" class="">About</a>
+                <a href="contact.html" class="">Contact</a>
+        </div>
+        <div class="col-2">
+            <div class="text text-primary">
+                <a href="https://instagram.com/jullansadventures" class=""><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/jullansadventures" class=""><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/@jullansadventures" class=""><i class="fab fa-youtube"></i></a>
+            </div> 
+        </div>
+    </div>
+    
+      <!-- .Fixed Menu for larger devices -->
+    <!-- .menues -->
+    
+<!-- header -->
+<div class="header">
+    <img src="images/main/header.jpg" alt="">
+</div>
+<!-- .header -->
 
-      <!-- Presentation of me -->
-    <div class="col-6"> <!-- 50% -->
+<!-- main -->
+
+      <!-- information of collaboration etc -->
+    <div class="col-6 text-dark content-center"> <!-- 50% -->
     <h1>Explore the great outdoors -
         <br/>with your brand front and center!</h1>
     <p>Are you ready to elevate your brand's presence in the outdoor adventure space?
-        <br/>As an experienced content creator, photographer, and videographer, I specialize in capturing
-        <br/>the essence of nature and adventure to tell compelling stories that resonate with audiences.
+       As an experienced content creator, photographer, and videographer, I specialize in capturing
+       the essence of nature and adventure to tell compelling stories that resonate with audiences.
         <br/><br/>
         With years of hands-on experience in the wilderness, 
-        <br/>I don’t just document outdoor adventures — <b>I live them</b>.
+        I don’t just document outdoor adventures — <b>I live them</b>.
         <br/><br/>
         Whether you're an outdoor company, travel agency, or lifestyle brand, I create stunning visuals
-        <br/>and engaging content that aligns with your vision and inspires your audience to embark on 
-        <br/>their next adventures - with your brand as their guide.
+        and engaging content that aligns with your vision and inspires your audience to embark on 
+        their next adventures - with your brand as their guide.
     </p>
     <h1>Why work with me?</h1>
     <p><b>* Authenticity:</b> I bring genuine passion for the outdoors to every project, 
-        <br/>ensuring your content connects on a personal level.</p>
+        ensuring your content connects on a personal level.</p>
     <p><b>* Quality:</b> From breathtaking photography to dynamic videos, 
-        <br/>I deliver professional, high-impact visuals that reflect your brand's values.</p>
+        I deliver professional, high-impact visuals that reflect your brand's values.</p>
     <p><b>* Versatility:</b> Whether you need social media campaigns, website content, 
-        <br/>or promotional videos, I craft stories tailored to your unique goals.</p>
+        or promotional videos, I craft stories tailored to your unique goals.</p>
     <p><b>* Collaboration:</b> I work closely with you to understand your vision,
-        <br/>ensuring your message shines through every frame.</p> 
+        ensuring your message shines through every frame.</p> 
     <h1>Let's create together!</h1>
     <p>Partnering with me means more than just photos and videos;
-        <br/>it means building a story your costumers will want to be part of.
-        <br/>Let's create content that inspires action and building lasting connections.
+     it means building a story your costumers will want to be part of.
+     Let's create content that inspires action and building lasting connections.
     </p>
     <br/>
     <p><b>📩 Contact me today to discuss how we can bring your vision to life.</b></p>
     <p>Together, we'll make your brand synonymous with adventure and exploration.</p>
-    <a href="mailto:juliabilling93@gmail.com"><p>juliabilling93@gmail.com</p></a>
-    <p>+46 736 - 81 22 40 (text message)</p>
+    <div class="email text-secondary">
+        <i class="fas fa-envelope"></i> 
+        juliabilling93@gmail.com
+    </div>
+    <div class="phone text-secondary">
+        <i class="fas fa-mobile"></i> 
+        +46736 - 81 22 40 (text message)
+    </div>
     <br/><br/>
-    <center><div class="btn">
-        <a href="mailto:juliabilling93@gmail.com"><h3>LET'S CONNECT!</h3></a>
-        </div></center>
+    <!-- btn "more about me" -->
+    <a href="mailto:juliabilling93@gmail.com" class="btn">LET'S CONNECT!</a>
+    <!-- .btn "more about me" -->
+</div>
+     <div class="col-6 content-center">
+        <img src="images/main/contact.JPG" class="profile-img">
+     </div>
+       
+    <!-- .information of collaboration etc --> 
+    
+    <!-- citat -->
+     <div class="col-12 text-light bg-primary content-center">
+        <p class="title">
+            "I wish the world was twice as big ― and half of it was still unexplored."
+        </p>
+        <p class="subtitle">
+            ― Sir David Frederick Attenborough
+        </p>
+     </div>
 
-    </div>    
-        <div class="col-6"><!-- 50% -->
-            <img src="images/about/6.jpg" width="50%">
-        </div>
+<!-- -citat -->
+
+    <!-- .main -->
 
 
+<!-- Footer -->
+<!-- about me & contact info -->
+ <div class="col-12">
+    <div class="col-4">
+        <p class="title text-secondary">About Me</p>
+        <p>Outdoor explorer from Sweden. Always looking for 
+            new adventures in the Nordic wilderness.</p>
+    
+            <address class="text-secondary">
+                <i class="fas fa-map-marker-alt"></i> 
+                Oskarström, Halland, Sweden
+            </address>
+    
+            <div class="phone text-secondary">
+                <i class="fas fa-mobile"></i> 
+                +46736 - 81 22 40 (text message)
+            </div>
 
-    <!-- footer -->
-    <div class="col-14">
-        <img src="images/main/logotyp-whole.png" width="40%">
-        <br/>
-        <br/>
-        <a href="https://instagram.com/jullansadventures">
-        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #365443;"></i>
-        </a>
-        <a href="https://www.youtube.com/@JullansAdventures">
-        <i class="fa-brands fa-youtube fa-2xl" style="color: #365443;"></i>
-        </a>
-        <a href="mailto:juliabilling93@gmail.com">
-            <i class="fa-solid fa-square-envelope fa-2xl" style="color: #365443;"></i>
-        </a>
+            <div class="email text-secondary">
+                <i class="fas fa-envelope"></i> 
+                juliabilling93@gmail.com
+            </div>
+    </div>
+    <!-- .about me & contact info -->
+    
+    <!-- featured posts -->
+    <div class="col-4">
         
-        <p>OSKARSTRÖM, HALLAND</p>
-        <p>JULIABILLING93@GMAIL.COM</p>
-        <p>+46736 - 81 22 40 (TEXT MESSAGE)</p>
-     </div>
-
-     <div class="col-15">
-        <p class="a">ALL CONTENT COPYRIGHT © 2024 JULLANS ADVENTURES - GODKÄND FÖR F-SKATT</p>
-     </div>
+        <div class="col-12">
+                <div class="col-2">
+                    <a href="#">
+                    <img src="images/featured/2025goals.JPG" class="featured-image" alt="">
+                </div>
+    
+                <div class="col-9">
+                    <a href="#" class="title text-dark">
+                        Goals & dreams for 2025!
+                    </a>
+            
+                    <p class="secondary-title text-secondary display-3">
+                        <span><i class="far fa-clock text-primary"></i> Jan 25, 2025 </span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-12">
+                    <div class="col-2">
+                        <a href="#">
+                        <img src="images/featured/firstlongdistancehike.jpg" class="featured-image" alt="">
+                    </div>
+                    <div class="col-9">
+                        <a href="#" class="title text-dark">
+                            My first ever long distance hike, along Kungsleden
+                        </a>
+                
+                        <p class="secondary-title text-secondary display-3">
+                            <span><i class="far fa-clock text-primary"></i> Jan 20, 2025 </span>
+                        </p>
+                    </div>
+                </a>
+        </div>
+    
+        <div class="col-12">
+                        <div class="col-2">
+                            <a href="#">
+                            <img src="images/featured/welcome.JPG" class="featured-image" alt="">
+                        </div>
+                        <div class="col-9">
+                            <a href="#" class="title text-dark">
+                                Welcome to Jullans Adventures website & blog!
+                            </a>
+                    
+                            <p class="secondary-title text-secondary display-3">
+                                <span><i class="far fa-clock text-primary"></i> Jan 15, 2025 </span>
+                            </p>
+                        </div>
+                    </a>
+        </div>
+    </div>
+    <!-- .featured posts -->
+    
+    <!-- tags & social media -->
+    <div class="col-4">
+        <h2 class="title text-secondary">Tags</h2>
+    
+        <div class="tags">
+            <a href="singlecategory.html?category=Denmark" class="nav-link">Denmark</a>
+            <a href="singlecategory.html?category=Finland" class="nav-link">Finland</a>
+            <a href="singlecategory.html?category=Iceland" class="nav-link">Iceland</a>
+            <a href="singlecategory.html?category=Norway" class="nav-link">Norway</a>
+            <a href="singlecategory.html?category=Sweden" class="nav-link">Sweden</a>
+        </div>
+        
+    
+        <h2 class="title text-secondary">Social</h2>
+    
+        <div class="social">
+            <div class="d-flex flex-wrap">
+            <a href="https://instagram.com/jullansadventures" class="nav-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/jullansadventures" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@jullansadventures" class="nav-link"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:juliabilling93@gmail.com" class="nav-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>        
+    </div>
+    </div>
+    <!-- .tags & social media -->
+    
+        <!-- copyright -->
+        <div class="col-12">
+            <p class="text-primary content-center">ALL CONTENT COPYRIGHT © 2024 JULLANS ADVENTURES - GODKÄND FÖR F-SKATT</p>
+        </div>
+            <!-- copyright -->
+    <!-- .Footer -->
 
 </body>
 </html>

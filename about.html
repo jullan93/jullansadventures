@@ -2,114 +2,171 @@
 <html>
 <head>
 <title>Jullans Adventures | Nordic Outdoor Explorer</title>
+
+<!-- länk till styling i css -->
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script> <!-- extern script för ikoner i footer -->
+
+<!-- extern script för ikoner på hemsidan -->
+<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script>
+
+<!-- länk till funktioner med Javascript -->
 <script src="functions.js"></script> 
 </head>
 <body>
 
-    <!-- fast meny i överkant -->
-    <div class="topnav" id="myTopnav">
-        <a href="index.html">HOME</a>
-        <a href="photography.html">PHOTOGRAPHY</a>
-        <a href="videography.html">VIDEOGRAPHY</a>
-        <a href="dronephotography.html">DRONE PHOTOGRAPHY</a>
-        <a href="dronevideography.html">DRONE VIDEOGRAPHY</a>
-        <a href="about.html" class="active">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+    <!-- menues -->
+     
+     <!-- overlay menu for mobile devices -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html" class="">Home</a>
+            <a href="photography.html" class="">Photography</a>
+            <a href="videography.html" class="">Videography</a>
+            <a href="categories.html" class="">Categories</a>
+            <a href="blog.html" class="">Blog</a>
+            <a href="about.html" class="">About</a>
+            <a href="contact.html" class="">Contact</a>
+            <a href="https://instagram.com/jullansadventures" class=""><i class="fab fa-instagram fa-2xs"></i></a>
+            <a href="https://facebook.com/jullansadventures" class=""><i class="fab fa-facebook-f fa-2xs"></i></a>
+            <a href="https://youtube.com/@jullansadventures" class=""><i class="fab fa-youtube fa-2xs"></i></a>
+        </div>
       </div>
 
-     <!-- header -->
-     <div class="col-12">
-        <img src="images/main/header.jpg">
-     </div>
+        <span class="openbtn" onclick="openNav()"><p class="brand">Jullans Adventures</p> &#9776;</span>
+      <!-- .overlay menu for mobile devices -->
+    
+      <!-- Fixed Menu for larger devices -->
+      <div id="fixedMenu">
+        <div class="col-2">
+        <p class="brand"><a href="index.html">Jullans Adventures</p></a>
+        </div>
+        <div class="col-7">
+            <a href="index.html" class="">Home</a>
+                <a href="photography.html" class="">Photography</a>
+                <a href="videography.html" class="">Videography</a>
+                <a href="categories.html" class="">Categories</a>
+                <a href="blog.html" class="">Blog</a>
+                <a href="about.html" class="">About</a>
+                <a href="contact.html" class="">Contact</a>
+        </div>
+        <div class="col-2">
+            <div class="text text-primary">
+                <a href="https://instagram.com/jullansadventures" class=""><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/jullansadventures" class=""><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/@jullansadventures" class=""><i class="fab fa-youtube"></i></a>
+            </div> 
+        </div>
+    </div>
+    
+      <!-- .Fixed Menu for larger devices -->
+    <!-- .menues -->
+    
+<!-- header -->
+<div class="header">
+    <img src="images/main/header.jpg" alt="">
+</div>
+<!-- .header -->
+
+<!-- main -->
 
       <!-- Presentation of me -->
+       <div class="col-12">
     <div class="col-6"> <!-- 50% -->
-    <h1>WHO AM I?</h1>
-    <p>I’m a woman in my early 30's who has always had a deep connection with nature and the outdoors. 
-        <br/>Some of my earliest and happiest memories are of being outside, 
-        <br/>soaking in the fresh air and freedom that only the natural world can offer. 
-        <br/>While life took me in different directions for a while, the last six years have brought me back to where my heart belongs — 
-        <br/>exploring the outdoors, especially hiking in the mountains and camping under the stars.
-        <br/>
-        <br/>My grandfather has called me “Jullan” for as long as I can remember, 
-        <br/>and that nickname feels perfectly tied to my identity as an adventurer and lover of the outdoors. 
-        <br/>These days, I spend as much time as I can exploring the incredible Nordic landscapes. 
-        <br/>From the rugged mountain trails to the quiet beauty of a forest at dusk, 
-        <br/>there’s nothing that compares to the serenity and inspiration I find in nature.
-        <br/>
-        <br/>Sleeping in the mountains has become one of my greatest joys. 
-        <br/>It’s where I sleep the best, surrounded by the stillness of the wilderness and the comforting sounds of nature. 
-        <br/>Whether it’s a short day hike to a stunning viewpoint or a multi-day exploration deep into remote terrain, 
-        <br/>I thrive on the opportunity to disconnect from the everyday and connect with the beauty of the world around me.
-        <br/>
-        <br/>Over time, this passion has grown into something I love sharing with others. 
-        <br/>Through my journeys, I capture the magic of Nordic nature with photography and videography. 
-        <br/>From dramatic landscapes to tiny, vibrant details in the flora and fauna, 
-        <br/>I want to show the world why these spaces matter—and why they deserve to be protected. 
-        <br/>National parks and untouched wilderness areas are treasures we must preserve for future generations.
-        <br/>
-        <br/>Along with sharing beautiful imagery, I also enjoy offering practical tips and advice for those looking to embark on their own outdoor adventures. 
-        <br/>Whether it’s tips on how to pack for an overnight hike, advice on staying safe in unpredictable weather, or sharing detailed hiking routes, 
-        <br/>I love helping others feel confident about stepping into the wild.
-        <br/>
-        <br/>To me, the outdoors isn’t just a destination—it’s a way of life. 
-        <br/>It’s about the calm that comes with a quiet sunrise on a mountaintop, the sense of accomplishment after a challenging hike, 
-        <br/>and the deep connection to something greater than ourselves. I hope my stories, 
-        <br/>photos, and videos inspire you to fall in love with nature too, 
-        <br/>whether you’re exploring your local trails or dreaming of Nordic landscapes.
-        <br/>
-        <br/>Join me on this journey, as I share not only the beauty of the outdoors but also the importance of caring for it. 
-        <br/>
-        <br/>Let’s explore, learn, and preserve our natural world together!</p>
+    <p class="title text-dark content-center">WHO AM I?</p>
+    <p class="text-dark content-center">I’m a woman in my early 30's who has always had a deep connection with nature and the outdoors. 
+    Some of my earliest and happiest memories are of being outside, 
+    soaking in the fresh air and freedom that only the natural world can offer. 
+    While life took me in different directions for a while, the last six years have brought me back to where my heart belongs — 
+    exploring the outdoors, especially hiking in the mountains and camping under the stars.
+    <br><br>
+    My grandfather has called me “Jullan” for as long as I can remember, 
+    and that nickname feels perfectly tied to my identity as an adventurer and lover of the outdoors. 
+    These days, I spend as much time as I can exploring the incredible Nordic landscapes. 
+    From the rugged mountain trails to the quiet beauty of a forest at dusk, 
+    there’s nothing that compares to the serenity and inspiration I find in nature.
+    <br><br>
+    Sleeping in the mountains has become one of my greatest joys. 
+    It’s where I sleep the best, surrounded by the stillness of the wilderness and the comforting sounds of nature. 
+    Whether it’s a short day hike to a stunning viewpoint or a multi-day exploration deep into remote terrain, 
+    I thrive on the opportunity to disconnect from the everyday and connect with the beauty of the world around me.
+    <br><br>
+    Over time, this passion has grown into something I love sharing with others. 
+    Through my journeys, I capture the magic of Nordic nature with photography and videography. 
+    From dramatic landscapes to tiny, vibrant details in the flora and fauna, 
+    I want to show the world why these spaces matter—and why they deserve to be protected. 
+    National parks and untouched wilderness areas are treasures we must preserve for future generations.
+    <br><br>
+    Along with sharing beautiful imagery, I also enjoy offering practical tips and advice for those looking to embark on their own outdoor adventures. 
+    Whether it’s tips on how to pack for an overnight hike, advice on staying safe in unpredictable weather, or sharing detailed hiking routes, 
+    I love helping others feel confident about stepping into the wild.
+    <br><br>
+    To me, the outdoors isn’t just a destination—it’s a way of life. 
+    It’s about the calm that comes with a quiet sunrise on a mountaintop, the sense of accomplishment after a challenging hike, 
+    and the deep connection to something greater than ourselves. I hope my stories, 
+    photos, and videos inspire you to fall in love with nature too, 
+    whether you’re exploring your local trails or dreaming of Nordic landscapes.
+    <br><br>
+    Join me on this journey, as I share not only the beauty of the outdoors but also the importance of caring for it. 
+    <br><br>
+    <b>Let’s explore, learn, and preserve our natural world together!</b></p>
     </div>    
-        <div class="col-6"><!-- 50% -->
-            <img src="images/about/5.jpg" width="40%">
+        <div class="col-6 content-center"><!-- 50% -->
+            <img src="images/main/aboutme1.jpg" class="about-img">
         </div>
+    </div>
+        <!-- .Presentation of me -->
 
     <!-- picture & short facts -->
-    <div class="col-16a"><!-- 50% -->
+     <div class="col-12 bg-primary">
+    <div class="col-6 content-center"><!-- 50% -->
+        <img src="images/main/aboutme2.JPG" class="about-img">
     </div>
 
-    <div class="col-16b"><!-- 50% -->
-        <h1>MY OUTDOOR EXPERTISE</h1>
-        <p>ᨒ <b>Multi-Day Hikes:</b> Countless multi-day treks (minimum 5 nights) through the breathtaking 
-            <br/>Swedish and Norwegian mountains, immersing myself in the heart of nature.</p>
+    <div class="col-6"><!-- 50% -->
+        <p class="title text-dark content-center">MY OUTDOOR EXPERTISE</p>
+        <p class="text-dark content-center">ᨒ <b>Multi-Day Hikes:</b> Countless multi-day treks (minimum 5 nights) through the breathtaking 
+        Swedish and Norwegian mountains, immersing myself in the heart of nature.</p>
         
-        <p>ᨒ <b>Mountain Safety Expertise:</b> Knowledge of fjällsäkerhet (mountain safety) ensures I navigate
-            <br/>and document adventures responsibly, even in challenging conditions.</p>
+        <p class="text-dark content-center">ᨒ <b>Mountain Safety Expertise:</b> Knowledge of fjällsäkerhet (mountain safety) ensures I navigate
+        and document adventures responsibly, even in challenging conditions.</p>
         
-        <p>ᨒ <b>Diverse Hiking Experience:</b> From uncountable day hikes in all kinds of weather to 
-            <br/>summiting rugged peaks, I’ve embraced the full spectrum of outdoor exploration.</p>
+        <p class="text-dark content-center">ᨒ <b>Diverse Hiking Experience:</b> From uncountable day hikes in all kinds of weather to 
+        summiting rugged peaks, I’ve embraced the full spectrum of outdoor exploration.</p>
 
-        <p>ᨒ <b>New Adventures:</b> I’m passionate about trying new outdoor activities and 
-            <br/>uncovering unique experiences, ensuring your content is fresh and engaging.</p>
+        <p class="text-dark content-center">ᨒ <b>New Adventures:</b> I’m passionate about trying new outdoor activities and 
+        uncovering unique experiences, ensuring your content is fresh and engaging.</p>
         
         <br/><br/>
 
-        <h1>5 SHORT FACTS ABOUT ME</h1>
-        <p>ᨒ Every summer I spend 5-9 nights in the Swedish or Norwegian mountains 
-            <br/>to dissconnect from the stress in the everyday life.</p>
+        <p class="title text-dark content-center">5 SHORT FACTS ABOUT ME</p>
+        <p class="text-dark content-center">ᨒ Every summer I spend 5-9 nights in the Swedish or Norwegian mountains 
+        to dissconnect from the stress in the everyday life.</p>
         
-        <p>ᨒ I did gymnastics for 15 years growing up, and I can still stand in the bridge position.</p>
+        <p class="text-dark content-center">ᨒ I did gymnastics for 15 years growing up, and I can still stand in the bridge position.</p>
         
-        <p>ᨒ My music taste is everyting from rock, punk, metal, poodle rock and everything in between. 
-        <br/>This suprises a lot of people as I don't look like I listen to that genre.</p>
+        <p class="text-dark content-center">ᨒ My music taste is everyting from rock, punk, metal, poodle rock and everything in between. 
+        This suprises a lot of people as I don't look like I listen to that genre.</p>
             
-        <p>ᨒ My favorite candy is licorice (preferably as salt as possible).</p>
+        <p class="text-dark content-center">ᨒ My favorite candy is licorice (preferably as salt as possible).</p>
         
-        <p>ᨒ I'm incredibly clumsy. Destpite 15 years in gymnastics and competing at SM (The Swedish championship) level,
-        <br/>I still trip over my own feet on a flat ground. I always have bruises on my legs.</p>
+        <p class="text-dark content-center">ᨒ I'm incredibly clumsy. Destpite 15 years in gymnastics and competing at SM (The Swedish championship) level,
+        I still trip over my own feet on a flat ground. I always have bruises on my legs.</p>
     </div>
+</div>
+    <!-- .picture & short facts -->
 
     <!-- latest adventures - last 3 years -->
-     <!-- pictures from adventures -->
-    <div class="col-4"><!-- 33% -->
+
+     <!-- picture & list of adventures 2024 -->
+      <div class="col-12">
+      <div class="col-6">
+        <img src="images/main/2024.JPG">
+      </div>
+      <div class="col-1">
+    </div>
+    <div class="col-5"><!-- 41.66% -->
         <h2>MY ADVENTURES DURING 2024</h2>
         <p class="b">ᨒ Visited three (3) of Sweden's 30 national parks - January
             <br/>- Åsnens National Park
@@ -169,7 +226,17 @@
             <br/>- Tried to walk inside a cave
         </p>
     </div>
-    <div class="col-4"><!-- 33% -->
+</div>
+<!-- .picture & list of adventures 2024 -->
+
+<!-- picture & list of adventures 2023 -->
+ <div class="col-12 bg-primary">
+<div class="col-6">
+    <img src="images/main/2023.JPG">
+  </div>
+  <div class="col-1">
+</div>
+    <div class="col-5"><!-- 41.66% -->
         <h2>MY ADVENTURES DURING 2023</h2>
         <p class="b">ᨒ Started the week in Dalarna for a week with dayhikes - January
             <br/>- Did a winter day hike in Fulufjället National Park
@@ -226,7 +293,17 @@
             <br/>- Virsehatt
         </p>
     </div>
-    <div class="col-4"><!-- 33% -->
+</div>
+<!-- .picture & list of adventures 2023 -->
+
+<!-- picture & list of adventures 2022 -->
+<div class="col-12">
+    <div class="col-6">
+        <img src="images/main/2022.JPG">
+      </div>
+      <div class="col-1">
+      </div>
+    <div class="col-5"><!-- 41.66% -->
         <h2>MY ADVENTURES DURING 2022</h2>
         <p class="b">ᨒ Did a lot of day hikes in the area around Halmstad - January
             <br/>- Fylleåleden, Halmstad
@@ -287,38 +364,136 @@
         </p>
         <p class="b">ᨒ Experienced two (2) winter day hikes in southern Sweden - December</p>
     </div>
+</div>
+<!-- .picture & list of adventures 2022 -->
 
-    <!-- pictures from adventures -->
-    <div class="col-4a"><!-- 33% -->
-    </div>
-    <div class="col-4b"><!-- 33% -->
-    </div>
-    <div class="col-4c"><!-- 33% -->
-    </div>
+<!-- citat -->
+<div class="col-12 text-light bg-primary content-center">
+    <p class="title">
+        "The mountains are calling and I must go."
+    </p>
+    <p class="subtitle">
+        ― John Muir
+    </p>
+ </div>
 
-    <!-- footer -->
-    <div class="col-14">
-        <img src="images/main/logotyp-whole.png" width="40%">
-        <br/>
-        <br/>
-        <a href="https://instagram.com/jullansadventures">
-        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #365443;"></i>
-        </a>
-        <a href="https://www.youtube.com/@JullansAdventures">
-        <i class="fa-brands fa-youtube fa-2xl" style="color: #365443;"></i>
-        </a>
-        <a href="mailto:juliabilling93@gmail.com">
-            <i class="fa-solid fa-square-envelope fa-2xl" style="color: #365443;"></i>
-        </a>
+<!-- -citat -->
+<!-- .main -->
+
+ <!-- Footer -->
+<!-- about me & contact info -->
+<div class="col-12 border">
+    <div class="col-4">
+        <p class="title text-secondary">About Me</p>
+        <p>Outdoor explorer from Sweden. Always looking for 
+            new adventures in the Nordic wilderness.</p>
+    
+            <address class="text-secondary">
+                <i class="fas fa-map-marker-alt"></i> 
+                Oskarström, Halland, Sweden
+            </address>
+    
+            <div class="phone text-secondary">
+                <i class="fas fa-mobile"></i> 
+                +46736 - 81 22 40 (text message)
+            </div>
+            <div class="email text-secondary">
+                <i class="fas fa-envelope"></i> 
+                juliabilling93@gmail.com
+            </div>
+    </div>
+<!-- .about me & contact info -->
+    
+    <!-- featured posts -->
+    <div class="col-4">
         
-        <p>OSKARSTRÖM, HALLAND</p>
-        <p>JULIABILLING93@GMAIL.COM</p>
-        <p>+46736 - 81 22 40 (TEXT MESSAGE)</p>
-     </div>
-
-     <div class="col-15">
-        <p class="a">ALL CONTENT COPYRIGHT © 2024 JULLANS ADVENTURES - GODKÄND FÖR F-SKATT</p>
-     </div>
+        <div class="col-12">
+                <div class="col-2">
+                    <a href="#">
+                    <img src="images/featured/2025goals.JPG" class="featured-image" alt="">
+                </div>
+    
+                <div class="col-9">
+                    <a href="#" class="title text-dark">
+                        Goals & dreams for 2025!
+                    </a>
+            
+                    <p class="secondary-title text-secondary display-3">
+                        <span><i class="far fa-clock text-primary"></i> Jan 25, 2025 </span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-12">
+                    <div class="col-2">
+                        <a href="#">
+                        <img src="images/featured/firstlongdistancehike.jpg" class="featured-image" alt="">
+                    </div>
+                    <div class="col-9">
+                        <a href="#" class="title text-dark">
+                            My first ever long distance hike, along Kungsleden
+                        </a>
+                
+                        <p class="secondary-title text-secondary display-3">
+                            <span><i class="far fa-clock text-primary"></i> Jan 20, 2025 </span>
+                        </p>
+                    </div>
+                </a>
+        </div>
+    
+        <div class="col-12">
+                        <div class="col-2">
+                            <a href="#">
+                            <img src="images/featured/welcome.JPG" class="featured-image" alt="">
+                        </div>
+                        <div class="col-9">
+                            <a href="#" class="title text-dark">
+                                Welcome to Jullans Adventures website & blog!
+                            </a>
+                    
+                            <p class="secondary-title text-secondary display-3">
+                                <span><i class="far fa-clock text-primary"></i> Jan 15, 2025 </span>
+                            </p>
+                        </div>
+                    </a>
+        </div>
+    </div>
+    <!-- .featured posts -->
+    
+    <!-- tags & social media -->
+    <div class="col-4">
+        <h2 class="title text-secondary">Tags</h2>
+    
+        <div class="tags">
+            <a href="singlecategory.html?category=Denmark" class="nav-link">Denmark</a>
+            <a href="singlecategory.html?category=Finland" class="nav-link">Finland</a>
+            <a href="singlecategory.html?category=Iceland" class="nav-link">Iceland</a>
+            <a href="singlecategory.html?category=Norway" class="nav-link">Norway</a>
+            <a href="singlecategory.html?category=Sweden" class="nav-link">Sweden</a>
+        </div>
+        
+    
+        <h2 class="title text-secondary">Social</h2>
+    
+        <div class="social">
+            <div class="d-flex flex-wrap">
+            <a href="https://instagram.com/jullansadventures" class="nav-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/jullansadventures" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@jullansadventures" class="nav-link"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:juliabilling93@gmail.com" class="nav-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>        
+    </div>
+    </div>
+    <!-- .tags & social media -->
+    
+    <!-- copyright -->
+    
+    <p class="text-primary content-center">ALL CONTENT COPYRIGHT © 2024 JULLANS ADVENTURES - GODKÄND FÖR F-SKATT</p>
+    
+    <!-- copyright -->
+    <!-- .Footer -->
 
 </body>
 </html>
