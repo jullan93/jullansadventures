@@ -454,13 +454,14 @@ img {
  /* --- Styling av blogginlägg --- */
 .post-container {
   max-width: 80%;
+  align-content: center;
   margin: 0;
   padding: 0;
   background: #fff;
 }
 
 .post-container img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
